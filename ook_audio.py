@@ -1,5 +1,7 @@
 from pydub import AudioSegment
 
+# Using the HackRF or any other RF tool, record the two necessary bits that represent bit 0 and bit 1 and compensate in the recordings for the delays in between bits.
+
 bit_0 = AudioSegment.from_wav("bit_0.wav")
 bit_1 = AudioSegment.from_wav("bit_1.wav")
 combinedbits = AudioSegment.from_wav("bit_0.wav")
